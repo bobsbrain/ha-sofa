@@ -25,3 +25,7 @@ Danach unter **Einstellungen → Geräte & Dienste → Integration hinzufügen �
 - Abgespielt wird direkt vom Sender (MP4 oder HLS). Inhalte, die nur in Österreich oder der Schweiz abrufbar sind, werden nicht angeboten.
 - Eine Suche gibt es im Medien-Bereich von Home Assistant für solche Quellen nicht; gesucht wird in Sofa.
 - Bei HLS-Streams im CMAF-Format (z. B. ARTE) hängt es vom Empfangsgerät ab, ob sie über Home Assistant abspielen; in Sofa selbst funktionieren sie immer.
+
+## Lizenz
+
+MIT – siehe [LICENSE](LICENSE).
