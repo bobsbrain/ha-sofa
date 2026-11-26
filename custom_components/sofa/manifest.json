@@ -1,0 +1,13 @@
+{
+  "domain": "sofa",
+  "name": "Sofa",
+  "codeowners": ["@bobsbrain"],
+  "config_flow": true,
+  "dependencies": ["media_source"],
+  "documentation": "https://github.com/bobsbrain/ha-sofa",
+  "integration_type": "service",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/bobsbrain/ha-sofa/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect Sofa",
+        "description": "Address of your Sofa server, e.g. https://sofa.example.org",
+        "data": { "url": "Address" }
+      }
+    },
+    "error": { "cannot_connect": "Sofa could not be reached at this address." },
+    "abort": { "already_configured": "This Sofa server is already set up." }
+  }
+}
