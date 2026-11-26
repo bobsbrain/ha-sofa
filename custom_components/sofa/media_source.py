@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from urllib.parse import quote, unquote
 
 from homeassistant.components.media_player import BrowseError, MediaClass, MediaType
@@ -124,7 +125,9 @@ class SofaMediaSource(MediaSource):
             parts.append(show)
         if label and label not in title:
             parts.append(label)
-        parts.append(title)
+        # titles that only say "Folge 6" add nothing next to the label
+        if not (label and re.fullmatch(r"(folge|teil) \d+", title.strip(), re.IGNORECASE)):
+            parts.append(title)
         progress = it.get("progress") or {}
         if progress.get("finished"):
             parts.append("✓")
